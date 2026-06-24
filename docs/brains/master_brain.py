@@ -8,3 +8,11 @@ class MasterBrain:
 
     def request_guardians(self):
         print("Requesting guardians approval...")
+
+class MasterBrain:
+
+    def make_decision(self):
+
+        print("Collecting brains opinions...")
+        print("Building consensus...")
+        print("Decision generated.")
