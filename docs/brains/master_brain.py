@@ -34,3 +34,25 @@ class MasterBrain:
         result = consensus.calculate_consensus(votes)
 
         print(result)
+
+from brains.consensus_engine import ConsensusEngine
+
+class MasterBrain:
+
+    def make_decision(self):
+
+        votes = [
+            "BUY",
+            "BUY",
+            "WAIT",
+            "BUY",
+            "SELL"
+        ]
+
+        consensus = ConsensusEngine()
+
+        decision = consensus.calculate_consensus(votes)
+
+        print(f"Final Decision: {decision}")
+
+        return decision
