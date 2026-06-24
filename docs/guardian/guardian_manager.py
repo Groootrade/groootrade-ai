@@ -1,7 +1,10 @@
 class GuardianManager:
 
-    def approve_trade(self):
-        print("Checking safety conditions...")
+    def approve_trade(self, confidence):
 
-    def reject_trade(self):
-        print("Trade rejected by guardians.")
+        if confidence < 70:
+            print("Trade rejected.")
+            return False
+
+        print("Trade approved.")
+        return True
