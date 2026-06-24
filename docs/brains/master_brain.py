@@ -16,3 +16,21 @@ class MasterBrain:
         print("Collecting brains opinions...")
         print("Building consensus...")
         print("Decision generated.")
+
+from brains.consensus_engine import ConsensusEngine
+
+class MasterBrain:
+
+    def make_decision(self):
+
+        votes = [
+            "BUY",
+            "BUY",
+            "WAIT"
+        ]
+
+        consensus = ConsensusEngine()
+
+        result = consensus.calculate_consensus(votes)
+
+        print(result)
