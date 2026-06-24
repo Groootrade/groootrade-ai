@@ -20,3 +20,23 @@ class TradingEngine:
         manager.run_analysis()
 
         print("Market analysis completed.")
+
+from brains.master_brain import MasterBrain
+from guardian.guardian_manager import GuardianManager
+
+class TradingEngine:
+
+    def execute(self):
+
+        master = MasterBrain()
+
+        decision = master.make_decision()
+
+        guardian = GuardianManager()
+
+        approved = guardian.approve_trade(decision)
+
+        if approved:
+            print("Trade execution authorized.")
+        else:
+            print("Trade execution blocked.")
