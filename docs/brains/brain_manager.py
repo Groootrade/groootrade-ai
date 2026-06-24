@@ -29,3 +29,21 @@ class BrainManager:
         self.levels.analyze_levels()
 
         self.decision.make_decision()
+
+from brains.market_brain import MarketBrain
+from brains.trend_brain import TrendBrain
+from brains.rsi_brain import RSIBrain
+
+class BrainManager:
+
+    def run_analysis(self):
+
+        market = MarketBrain()
+        trend = TrendBrain()
+        rsi = RSIBrain()
+
+        market.analyze()
+        trend.analyze()
+        rsi.analyze()
+
+        print("Analysis completed.")
