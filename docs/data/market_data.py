@@ -1,4 +1,10 @@
 class MarketData:
 
-    def get_data(self):
-        print("Getting market data...")
+    def __init__(self):
+        self.snapshot = None
+
+    def update(self, snapshot):
+        self.snapshot = snapshot
+
+    def get_snapshot(self):
+        return self.snapshot
