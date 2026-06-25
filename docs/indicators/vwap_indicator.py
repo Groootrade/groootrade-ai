@@ -1,4 +1,11 @@
 class VWAPIndicator:
 
-    def calculate(self):
-        print("Calculating VWAP...")
+    def analyze(self, price, vwap):
+
+        if price > vwap:
+            return "BUY"
+
+        if price < vwap:
+            return "SELL"
+
+        return "WAIT"
