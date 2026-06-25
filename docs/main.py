@@ -21,3 +21,19 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+from core.bootstrap import Bootstrap
+from core.application import Application
+
+def main():
+
+    bootstrap = Bootstrap()
+
+    container = bootstrap.build()
+
+    app = Application(container)
+
+    app.start()
+
+if __name__ == "__main__":
+    main()
