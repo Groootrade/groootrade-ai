@@ -16,3 +16,4 @@ class BrainVote:
     confidence: float
 
     reason: str
+
