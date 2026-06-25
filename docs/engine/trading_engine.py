@@ -40,3 +40,17 @@ class TradingEngine:
             print("Trade execution authorized.")
         else:
             print("Trade execution blocked.")
+
+market = MarketData()
+
+snapshot = MarketSnapshot(
+    "EURUSD",
+    1.1682,
+    25600,
+    0.2,
+    "M15"
+)
+
+market.update(snapshot)
+
+decision = market_brain.analyze(market)
