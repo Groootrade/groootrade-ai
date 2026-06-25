@@ -47,3 +47,14 @@ class BrainManager:
         rsi.analyze()
 
         print("Analysis completed.")
+votes = [
+
+    market.analyze(),
+
+    trend.analyze(),
+
+    rsi.analyze()
+
+]
+
+return votes
