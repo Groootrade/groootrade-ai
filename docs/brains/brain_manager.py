@@ -47,7 +47,7 @@ class BrainManager:
         rsi.analyze()
 
         print("Analysis completed.")
-votes = [
+votes = manager.run_analysis(market_data) [
 
     market.analyze(),
 
