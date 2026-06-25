@@ -26,7 +26,7 @@ from guardian.guardian_manager import GuardianManager
 
 class TradingEngine:
 
-    def execute(self):
+    def execute():
 
         master = MasterBrain()
 
